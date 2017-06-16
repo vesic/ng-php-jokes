@@ -1,0 +1,12 @@
+<div class="container">
+  <jokes-header></jokes-header>
+  <div class="columns">
+    <div class="column is-one-third">
+      <jokes-sidebar [jokes]="jokes" (ee)="setJoke($event)"></jokes-sidebar>
+    </div>
+    <div class="column">
+      <jokes-item [joke]="joke"></jokes-item>
+      <jokes-form (refreshJokes)="onRefreshJokes()"></jokes-form>
+    </div>
+  </div>
+</div>
